@@ -1,0 +1,241 @@
+@use '../abstracts/index' as *;
+@use '../base/grid' ;
+
+/* about */
+#About{
+    @include mediaQuery(780px){
+        padding: 0px 10%;
+    }
+    @include mediaQuery(1200px){
+        padding: 0px 10%;
+        margin: 80px 0;
+    }
+}
+// make indentation of paragraph
+.about-paragraph p::first-letter {
+    padding-left: 10px;
+}
+
+.about-item{
+    grid-column: 2/9;
+    margin: 20px 0;
+
+    @include mediaQuery(780px){
+        grid-column: span 4;
+        margin: 50px 5%;
+    }
+    @include mediaQuery(1200px){
+        grid-column: span 4;
+        margin: 20px 0;
+        width: 100%;
+        justify-self: center;
+    }
+}
+.about-item *{   /* select every single item inside .about-item */
+    /* align-self: center; */
+    text-align: center;
+
+    .fas{
+        color: $primary-color;
+    }
+}
+
+
+.about-title-version1{
+    @include mediaQuery(1200px){
+        border:2px solid $secondary-color;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        background: $secondary-color;
+        padding: 20px 0 0 0;
+
+    }
+}
+
+
+.about-paragraph-version1{
+    @include mediaQuery(1200px){
+        padding: 20px;
+    }
+}
+.about-title-version2{ 
+    @include mediaQuery(1200px){
+        padding: 20px 0 0 0;
+    } 
+
+}
+.about-paragraph-version2{
+    @include mediaQuery(1200px){
+        border:2px solid $secondary-color;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background: $secondary-color;
+        padding: 20px;
+        
+    } 
+}
+
+.about-item .fa-gift, .about-item .fa-seedling {
+    @include mediaQuery(1200px){
+        color: white;
+
+    }
+}
+
+
+
+
+
+/* contact */
+
+#Contact{
+    @include mediaQuery(780px){
+        padding: 0px 2%;
+    }
+}
+.contact-title-bg-left{
+    width: 250px;
+    height: 40px;
+    background: rgba(161,198,220,0.3);
+
+    position: relative;
+
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+    @include mediaQuery(780px){
+        width: 500px;
+        height: 50px;
+       
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .contact-title-bg-right{
+        width: 60vw;
+        height: 40px;
+        background: rgba(161,198,220,0.3);
+    
+        position:absolute;
+        left: 100px;
+        top: 10px;
+    
+        @include mediaQuery(780px){
+            width: 80vw;
+            height: 50px;
+         
+            left: 110px;
+            top: 15px;
+        }
+    }
+    h2{
+        position:absolute;
+        margin-top: 0px;
+        top: 15px;
+        left: 120px;
+
+        @include mediaQuery(780px){
+            top: 20px;
+            left: 200px;
+        }
+    }
+}
+
+
+.contact-form {
+    grid-column: 2/9;
+    text-align: center;
+
+    @include mediaQuery(780px){
+        grid-column: 1/7;
+    }
+    @include mediaQuery(1200px){
+        grid-column: 1/6;
+    }
+}
+.contact-form {
+    //width: 70%;
+    [type="text"],[type="email"]{
+         width: 70%;
+         font-size: $font-size-placeholder;
+    }
+    [type="submit"]{
+        width:20%;
+
+    }
+    textarea{
+        width: 70%;
+        height: 200px;
+        margin-left: 30px;
+        margin-top: 10px;
+        &::placeholder {
+            font-size: $font-size-placeholder;
+          }
+        
+    
+        @include mediaQuery(780px){
+            height: 250px;
+            margin-left: 40px;
+            margin-top: 15px;
+        }
+    
+    }
+    
+}
+
+
+
+
+
+.contact-info{
+    grid-column: 2/9;
+    text-align: center; 
+
+    @include mediaQuery(780px){
+        grid-column: 7/12;
+    }
+    @include mediaQuery(1200px){
+        grid-column: 6/12;
+    }
+}
+
+
+.contact-form h4 .fas, .contact-info h4 .fas{
+    margin-right: 10px;
+
+    @include mediaQuery(780px){
+        margin-right: 15px;
+    }
+}
+
+
+.contact-content .fas{
+    color: $primary-color;
+}
+.contact-info{
+    margin:30px 0;
+}
+.contact-info #map{
+    width: 100%;
+    height: 300px;
+
+    @include mediaQuery(780px){
+        width: 100%;
+        height: 330px;
+    }
+}
+
+.contact-details{
+    @include mediaQuery(1200px){
+        display: flex;  
+    }
+
+}
+
+.contact-details h4{
+    @include mediaQuery(1200px){
+        padding: 0 10px; 
+    }
+    
+}

@@ -1,0 +1,23 @@
+{
+  "name": "gitHubPages2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoebehala/phoebehala.gitHubPages2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoebehala/phoebehala.gitHubPages2/issues"
+  },
+  "homepage": "https://github.com/phoebehala/phoebehala.gitHubPages2#readme",
+  "devDependencies": {
+    "sass": "^1.41.0"
+  }
+}

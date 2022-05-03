@@ -1,0 +1,48 @@
+@use '../abstracts/index' as *;
+
+.top-banner{
+    padding:10px 100px;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+
+    .stock-wrapper{
+        span{
+            margin-right: 15px;
+        }
+    }
+    .social-wrapper{
+        .top-socials{
+            display: flex;
+
+            .fa{
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .login-wrapper{
+        &-icons{
+            display: flex;
+
+            .fa-solid {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.nav-container{
+    .nav-wrapper{
+        display: flex;
+
+        .nav-ist{
+            display: flex;
+            align-self: center;
+            
+            &-item:not(:last-child){
+                margin-right: 15px;
+            }
+        }
+    }
+}

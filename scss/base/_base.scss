@@ -1,0 +1,32 @@
+@use '../abstracts' as *; 
+// padding:20px
+
+body{
+    /* background: var(--secondary); */
+    overflow-x: hidden;
+
+    
+}
+
+textarea{
+    background:rgba(161,198,220,0.1) ;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 3px;
+    color: $light-gray;
+    
+}
+
+input{
+    background:none ;
+    padding: 10px 16px;
+    border: none;
+    border-bottom: 1px solid $primary-color;
+    color: $light-gray
+    ;
+    
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

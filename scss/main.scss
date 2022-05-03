@@ -1,0 +1,27 @@
+// base
+@use '../scss/base/reset';
+@use '../scss/base/base';
+@use '../scss/base/grid';
+@use '../scss/base/fonts';
+@use '../scss/base/mapbox';
+
+// abstracts
+@use '../scss/abstracts/index';
+
+
+// component
+@use '../scss/components/buttons';
+
+
+
+// header
+@use '../scss/layout/header';
+
+// nav
+@use '..//scss/layout/navigation';
+
+// home page
+@use '../scss/pages/home';
+
+// footer
+@use '../scss/layout/footer';

@@ -1,0 +1,62 @@
+@use '../abstracts/index' as *;
+
+/* footer */
+footer{
+    background-color: $primary-color;
+
+}
+.footer-content {
+    @include mediaQuery(780px){
+        margin-top: 50px;
+        padding: 0 3%;
+    }  
+}
+
+.footer-category{
+    grid-column: 2/9;
+    text-align: center;
+
+    margin-top: 20px;
+
+    @include mediaQuery(780px){
+        grid-column: span 3;
+    }
+    
+    h4::after{
+        @include underlineDeco;
+
+        
+    }
+}
+
+footer li{
+    font-size: 0.9em;
+    margin: 9px 0;
+    cursor: pointer;   
+    
+    .fas{
+        margin-right: 10px;
+        
+    }
+}
+.footer-follow .footer-follow-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30%;
+
+    @include mediaQuery(780px){
+        padding: 0 20%;
+    }
+}
+
+
+.copyright{
+    margin-top: 50px;
+    background-color: white;
+    text-align: center;
+    h5{
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+}

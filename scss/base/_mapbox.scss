@@ -1,0 +1,9 @@
+// doesn't work. end up editing inside html  <div id='map' style="z-index: 1;"></div> 
+
+.leaflet-bottom, .leaflet-top{
+    z-index: 1;
+}
+
+.leaflet-control{
+    z-index: 1;
+}
