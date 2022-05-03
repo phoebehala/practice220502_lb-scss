@@ -1,87 +1,187 @@
 @use '../abstracts/index' as *;
 @use '../base/grid' ;
 
+/* Header */
+.hero-banner{
+    background-image: url("../../assets/img/Group 33.png");
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    h1{
+        width: 350px;
+        padding: 150px 0 0 100px ;
+    }
+}
+
+
+
+.subscribe-area{
+    position: absolute;
+    bottom: -100px;
+
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    margin: 0 100px;
+    height:200px;
+
+    display: flex;
+    padding: 0 30px 0 50px;
+    left:0;
+    right: 0;
+
+
+    .subscribe-text{
+        flex:3;
+
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+
+        background: url("../../assets/img/Group 39.png");
+        background-position: center center;
+        background-size: cover;
+    }
+
+    form{
+        flex:7;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .user-input{
+            display: flex;
+            align-items: center;
+        }
+        label{
+            visibility:hidden;
+        }
+        input{
+            // height: 20px;
+        }
+        .input-submit{
+            // height: 50px;
+        }
+    }
+}
+
+/* end of Header */
+
+
 /* about */
-#About{
-    @include mediaQuery(780px){
-        padding: 0px 10%;
+.about-section{
+    background-image: url("../../assets/img/Group 26@3x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 200px 100px 0 100px;
+
+    height: 500px;
+
+    .about-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &-wrapper{
+     
+            h3{
+                margin: 20px 0;
+            }
+
+            &-desc{
+                display: flex;
+
+                .about-deco-vertical{
+                    width: 10px;
+                    height:50px;
+                    background-color: $primary-color;
+                    margin-right: 20px;
+                    border-bottom-right-radius: 10px;
+                }
+
+            }
+
+        }
     }
-    @include mediaQuery(1200px){
-        padding: 0px 10%;
-        margin: 80px 0;
+
+    .about-history{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+
+        @media screen and (max-width:1100px){
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items:flex-start;
+         }
+     
+
+        .about-experience{
+
+            margin-bottom: 50px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .years:after{
+                border-bottom: 10px solid #FF8800;
+                content: '';
+                display: block;
+                width: 100%;
+                padding: 5px;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+        }
+        .about-milestones{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+
+            .about-milestones-item {
+                width: 300px;
+                height: 200px;
+                background-color: aqua;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: #FF8800;
+                    box-shadow: 0 15px 15px rgba(144, 39, 83, 0.4);
+
+                }
+
+            }
+            .about-milestones-one-of-four{
+                grid-row: 1/2;
+                grid-row: 1/2;
+            }
+            .about-milestones-two-of-four{
+                grid-row: 2/3;
+                grid-row: 1/2;
+            }
+            .about-milestones-three-of-four{
+                grid-row: 1/2;
+                grid-row: 2/3;
+            }
+            .about-milestones-four-of-four{
+                grid-row: 2/3;
+                grid-row: 2/3;
+            }
+        }
     }
 }
-// make indentation of paragraph
-.about-paragraph p::first-letter {
-    padding-left: 10px;
-}
-
-.about-item{
-    grid-column: 2/9;
-    margin: 20px 0;
-
-    @include mediaQuery(780px){
-        grid-column: span 4;
-        margin: 50px 5%;
-    }
-    @include mediaQuery(1200px){
-        grid-column: span 4;
-        margin: 20px 0;
-        width: 100%;
-        justify-self: center;
-    }
-}
-.about-item *{   /* select every single item inside .about-item */
-    /* align-self: center; */
-    text-align: center;
-
-    .fas{
-        color: $primary-color;
-    }
-}
-
-
-.about-title-version1{
-    @include mediaQuery(1200px){
-        border:2px solid $secondary-color;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        background: $secondary-color;
-        padding: 20px 0 0 0;
-
-    }
-}
-
-
-.about-paragraph-version1{
-    @include mediaQuery(1200px){
-        padding: 20px;
-    }
-}
-.about-title-version2{ 
-    @include mediaQuery(1200px){
-        padding: 20px 0 0 0;
-    } 
-
-}
-.about-paragraph-version2{
-    @include mediaQuery(1200px){
-        border:2px solid $secondary-color;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-        background: $secondary-color;
-        padding: 20px;
-        
-    } 
-}
-
-.about-item .fa-gift, .about-item .fa-seedling {
-    @include mediaQuery(1200px){
-        color: white;
-
-    }
-}
-
+/* end of about */
 
 
 

@@ -58,8 +58,11 @@
 
     <div class="nav-container">
         <nav class="nav-wrapper">
+       
             <img src="/assets/img/LithiumBankLogo5.png" alt="">
-            <ul class="nav-ist">
+
+
+            <ul class="nav-ul">
                 <li class="nav__item"><a href="corporate" class="nav__title">Corporate</a>
                     <!-- <div class="nav__dropdown-container">
                         <ul class="nav__dropdown">
@@ -77,9 +80,8 @@
                     </div> -->
                 </li>
 
-                <li class="nav__item nav__item--has-dropdown"><a href="corporate" class="nav__title">Project</a>
-
-                </li>
+                    
+                <li class="nav__item nav__item--has-dropdown"><a href="corporate" class="nav__title">Project</a></li>
                 <li class="nav__item"><a href="/" class="nav__title">News</a></li>
                 <li class="nav__item"><a href="contact" class="nav__title">Investors</a></li>
                 <li class="nav__item"><a href="contact" class="nav__title">Contact</a></li>
@@ -94,7 +96,27 @@
 <!-- Hero Banner -->
     <section class="hero-banner">
         <h1>Developing Direct Brine Battery Grade Lithium Resources in Western Canada</h1>
-        <div class="btn-group"><a href="projects" class="c-btn c-btn--main">Projects</a> <a href="investors" class="c-btn c-btn--transparent">Learn More</a> <a href="images/pdf/Corporate%20Presentation/2022/BGS_PPT_MAY%20FINAL.pdf" target="_blank" class="c-btn c-btn--presentation">Corporate Presentation</a></div>
+
+        <!-- absolute!! Subscribe -->
+            <div class="subscribe-area"> 
+                    <div class="subscribe-text">
+                        <h2 class="subscribe-text-h">Subscribe</h2>
+                        <span>Stay up to date with our latest news</span>
+                    </div>
+        
+                    <form action="" class="subscribe-input-form">
+                        <div class="user-input">
+                            <label for="name"> name:</label><br>
+                            <input type="text" id="name" value="name"><br><br>
+                            <label for="email">E-mail:</label><br>
+                            <input type="text" id="email" value="E-mail"><br><br>
+                        </div>
+
+                        <input type="submit" value="Sign Up" class="signup-btn signup-slide">
+  
+                    </form>
+            </div>
+        <!-- End of absolute!! Subscribe -->
 
     </section>
 <!-- Hero Content -->
@@ -102,49 +124,41 @@
 <!-- End of Header-->
 
 
-<!-- absolute!! Subscribe -->
-    <div class="subscribe-area"> 
-            <h3 class="subscribe-title"></h3>
-
-            <form action="" class="subscribe-input-form">
-                <label for="name"> name:</label><br>
-                <input type="text" id="name" value="name"><br><br>
-                <label for="email">E-mail:</label><br>
-                <input type="text" id="email" value="E-mail"><br><br>
-                <input type="submit" value="Sign Up">
-            </form>
-    </div>
-<!-- End of absolute!! Subscribe -->
 
 
 <!-- about -->
 <section class="about-section">
-    <div>
-        <div class="about-deco-vertical"></div>
-        <h3 class="about-title">About Lithium Bank</h3>
-        <p class="about-desc">LithiumBank Resources Corp. is an exploration and development company focused on direct brine lithium resources in Western Canada. LithiumBank has over 3.2 million acres of potential Direct Lithium Extraction (DLE) amenable assets.</p>
-        <button class="about-btn">Learn More</button>
+    <div class="about-text" >
+        <div class="about-text-wrapper">
+            <h3 class="about-title">About Lithium Bank</h3>
+            <div class="about-text-wrapper-desc">
+                <div class="about-deco-vertical"></div>
+                <p class="about-desc-p">LithiumBank Resources Corp. is an exploration and development company focused on direct brine lithium resources in 
+                        <br> Western Canada. LithiumBank has over 3.2 million acres of potential Direct Lithium Extraction (DLE) amenable assets.</p>
+            </div>
+        </div>
+        <button class="about-btn btn slide">Learn More</button>
     </div>
     <div class="about-history">
         <div class="about-experience">
             <span>15</span>
-            <span>Years of Experience</span>
-            <div class="about-deco-horizontal"></div>
+            <span class="years">Years of Experience</span>
+            <!-- <div class="about-deco-horizontal"></div> -->
         </div>
         <div class="about-milestones">
-            <div>
+            <div class="about-milestones-item about-milestones-one-of-four">
                 <span>10,000</span>
                 <span>Business Partners</span>
             </div>
-            <div>
+            <div class="about-milestones-item about-milestones-two-of-four">
                 <span>25M</span>
                 <span>Products Installed</span>
             </div>
-            <div>
+            <div class="about-milestones-item about-milestones-three-of-four">
                 <span>22</span>
                 <span>Countries World Wide</span>
             </div>
-            <div>
+            <div class="about-milestones-item about-milestones-four-of-four">
                 <span>5</span>
                 <span>Industry Awards</span>
             </div>

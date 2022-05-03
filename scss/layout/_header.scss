@@ -33,15 +33,32 @@
 }
 
 .nav-container{
+    padding:10px 100px;
     .nav-wrapper{
-        display: flex;
+        height: 81px; /* based on .nav__item:padding: 30px 0; */
 
-        .nav-ist{
+        display: flex;
+        justify-content: space-between;
+
+        .nav-ul{
             display: flex;
             align-self: center;
-            
-            &-item:not(:last-child){
+
+            .nav__item{
+                //height: 50px;
+                padding: 30px 0;
+                
+              &:hover{
+                  border-bottom: 5px $primary-color solid;
+                  a{
+                      color: $primary-color ;
+                      font-weight: bolder;
+                  }
+              }
+            }
+            .nav__item:not(:last-child){
                 margin-right: 15px;
+
             }
         }
     }
