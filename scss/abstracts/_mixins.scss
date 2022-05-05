@@ -63,8 +63,40 @@
     large tablet & laptop style 
 @media screen and (min-width: 1200px) {}
 */
+
+$bp-sm: 500px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
 @mixin mediaQuery($arg) {
     @media screen and (min-width:$arg){
+        @content;
+    }
+}
+
+
+// mobile-first media queries
+@mixin sm {
+    @media screen and (min-width: #{$bp-sm}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$bp-md}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: #{$bp-lg}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (min-width: #{$bp-xl}) {
         @content;
     }
 }
