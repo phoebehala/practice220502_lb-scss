@@ -1,62 +1,51 @@
 @use '../abstracts/index' as *;
 
-/* footer */
-footer{
-    background-color: $primary-color;
 
-}
-.footer-content {
-    @include mediaQuery(780px){
-        margin-top: 50px;
-        padding: 0 3%;
-    }  
-}
-
-.footer-category{
-    grid-column: 2/9;
-    text-align: center;
-
-    margin-top: 20px;
-
-    @include mediaQuery(780px){
-        grid-column: span 3;
-    }
+.footer-section{
+    padding: 50px 100px;
+    background: linear-gradient(to bottom, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
     
-    h4::after{
-        @include underlineDeco;
-
-        
-    }
-}
-
-footer li{
-    font-size: 0.9em;
-    margin: 9px 0;
-    cursor: pointer;   
-    
-    .fas{
-        margin-right: 10px;
-        
-    }
-}
-.footer-follow .footer-follow-content{
     display: flex;
-    justify-content: space-around;
-    padding: 0 30%;
+    gap: 100px;
 
-    @include mediaQuery(780px){
-        padding: 0 20%;
+    color: aliceblue;
+
+    .footer-logo{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        img{
+            //display: block;
+            width: 100%;
+            //height: 100%;
+        }
+    }
+    .footer-content-desc{
+        flex: 4;
+    }
+    .footer-content-contact{
+        flex: 3;
+        h3{
+            margin-bottom: 15px;
+        }
+    }
+
+    .footer-content-social{
+        flex: 3;
+        text-align: right;
+        ul{
+            display: flex;
+            justify-content: end;
+            margin-bottom: 30px;
+
+
+            li:not(:last-child){
+                margin-right: 30px;
+            }
+        }
+
     }
 }
 
 
-.copyright{
-    margin-top: 50px;
-    background-color: white;
-    text-align: center;
-    h5{
-        margin: 0 auto;
-        padding-top: 10px;
-    }
-
-}
