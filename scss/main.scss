@@ -20,8 +20,11 @@
 // nav
 @use '..//scss/layout/navigation';
 
-// home page
+// page
 @use '../scss/pages/home';
+@use '../scss/pages/about';
+@use '../scss/pages/financials';
+@use '../scss/pages/technicalReports';
 
 // footer
 @use '../scss/layout/footer';

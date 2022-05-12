@@ -1028,6 +1028,78 @@ h5 {
 }
 
 end of vision  */
+.about-container .about-desc {
+  margin-bottom: 50px;
+}
+.about-container .about-item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: max-content;
+  margin-bottom: 50px;
+}
+.about-container .about-item-wrapper .about-item-img {
+  grid-column: 1/2;
+  width: 60%;
+  margin: auto;
+  margin-top: 0;
+}
+.about-container .about-item-wrapper .about-item-title {
+  grid-column: 2/4;
+  text-align: center;
+}
+.about-container .about-item-wrapper .about-item-p, .about-container .about-item-wrapper .about-item-p-ul {
+  grid-column: 4/13;
+}
+.about-container .about-item-p-ul-li {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  /* depend on .about-item-p-ul-li::before */
+}
+.about-container .about-item-p-ul-li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  left: -20px;
+  top: 5px;
+}
+
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header-1 {
+  background-color: aquamarine;
+  column-width: 990px;
+}
+
+.table-header-2 {
+  background-color: yellow;
+  border: none;
+}
+
+.report-card {
+  background: linear-gradient(to right, green 0%, black 50%);
+  width: max-content;
+}
+.report-card .viewReport-wrapper {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.report-card .viewReport-wrapper .fa-regular {
+  color: green;
+  font-size: 10px;
+}
 .footer-section {
   padding: 50px 100px;
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%);

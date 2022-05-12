@@ -1,0 +1,19 @@
+.report-card{
+    background: linear-gradient(to right, green 0%, black 50%); 
+    width: max-content;
+    .viewReport-wrapper{
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding: 10px 20px;
+
+
+        .fa-regular{
+            color: green;
+            font-size: 10px;
+        } 
+    }
+    a {
+
+  
+    }
+}
