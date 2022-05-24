@@ -1117,6 +1117,43 @@ table {
   object-fit: cover;
 }
 
+.project-energy-about_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.project-energy-about_container .project-energy-about_card {
+  width: 100%;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.project-energy-about_container .project-energy-about_card:hover {
+  cursor: pointer;
+  background-color: #FF8800;
+  box-shadow: 0 15px 15px rgba(188, 233, 52, 0.8);
+}
+.project-energy-about_container .project-energy-about_card:hover .project-energy-about_card_text {
+  color: white;
+}
+.project-energy-about_container .project-energy-about_card_img {
+  width: 100%;
+}
+.project-energy-about_container .project-energy-about_card_text {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.project-energy-about_container .project-energy-about_card_text_date {
+  flex: 1;
+}
+.project-energy-about_container .project-energy-about_card_text_desc {
+  flex: 3;
+}
+
 .footer-section {
   padding: 50px 100px;
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%);

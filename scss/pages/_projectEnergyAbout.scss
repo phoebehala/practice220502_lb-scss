@@ -1,0 +1,47 @@
+@use '../abstracts/index' as *;
+
+.project-energy-about_container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    gap: 3rem;
+
+
+    .project-energy-about_card{
+        width: 100%;
+        background-color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        transition: all .5s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            background-color: #FF8800;
+            box-shadow: 0 15px 15px rgba(188, 233, 52, 0.8);
+
+            .project-energy-about_card_text{
+                color:white;
+            }
+
+        }
+
+
+        &_img{
+            width: 100%;
+        }
+        &_text{
+            padding: 20px;
+
+            @include flexLayout;
+            column-gap: 10px;
+ 
+
+            &_date{
+                flex:1;
+            }
+            &_desc{
+                flex:3;
+            }
+        }
+    }
+}
